@@ -78,7 +78,7 @@ const Card = () => {
     
     return (
       <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-        <img className="cat-img w-96 h-96 mb-8" src={catImage} alt="Picture of a cat" />
+        <img className="cat-img w-96 h-96 mb-8" src={catImage} alt="Gato jugando con una bola de estambre" />
         <p className="title text-4xl text-gray-900 mb-8" style={{ fontFamily: 'Outfit', fontWeight: 900 }}>{noMessage}</p>
         <div className={buttonsHidden ? "hidden" : "buttons"}>
           {heartBroken ? ( // Mostrar dos botones "Sí" si el corazón está roto

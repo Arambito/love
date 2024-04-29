@@ -83,14 +83,14 @@ const Card = () => {
         <div className={buttonsHidden ? "hidden" : "buttons"}>
           {heartBroken ? ( // Mostrar dos botones "Sí" si el corazón está roto
             <>
-              <button type="button" className={`btn btn--yes px-${yesButtonWidth}px py-${yesButtonHeight}px text-xl font-semibold rounded-lg bg-green-500 text-white mr-4`} onClick={handleYesClick} style={{ fontFamily: 'Outfit' }}>SI</button>
+              <button type="button" className={"btn btn--yes px-" + yesButtonWidth + "px py-" + yesButtonHeight + "px text-xl font-semibold rounded-lg bg-green-500 text-white mr-4"} onClick={handleYesClick} style={{ fontFamily: 'Outfit' }}>SI</button>
               <button type="button" className="btn btn--yes px-10 py-6 text-xl font-semibold rounded-lg bg-green-500 text-white mr-4" onClick={handleYesClick} style={{ fontFamily: 'Outfit' }}>SI x2</button>
             </>
           ) : ( // Mostrar solo un botón "Sí" si el corazón no está roto
-            <button type="button" className={`hidden btn btn--no px-10 py-6 text-xl font-semibold rounded-lg bg-red-500 text-white`} onClick={handleNoClick} style={{ fontFamily: 'Outfit' }}>NO</button>
+            <button type="button" className={"btn btn--yes px-" + yesButtonWidth + "px py-" + yesButtonHeight + "px text-xl font-semibold rounded-lg bg-green-500 text-white mr-4"} onClick={handleYesClick} style={{ fontFamily: 'Outfit' }}>SI</button>
           )}
           {heartBroken ?(
-            <button type="button" className="hidden btn btn--no px-10 py-6 text-xl font-semibold rounded-lg bg-red-500 text-white" onClick={handleNoClick} style={{ fontFamily: 'Outfit' }}>NO</button>
+            <button type="button" className={"hidden btn btn--no px-10 py-6 text-xl font-semibold rounded-lg bg-red-500 text-white"} onClick={handleNoClick} style={{ fontFamily: 'Outfit' }}>NO</button>
           ) : (
             <button type="button" className="btn btn--no px-10 py-6 text-xl font-semibold rounded-lg bg-red-500 text-white" onClick={handleNoClick} style={{ fontFamily: 'Outfit' }}>NO</button>
           )}
